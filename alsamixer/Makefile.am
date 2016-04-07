@@ -1,5 +1,5 @@
 AM_CFLAGS = @CURSES_CFLAGS@ -DCURSESINC="@CURSESINC@"
-LDADD = @CURSESLIB@
+LDADD = @CURSESLIB@ -ltinfo
 
 bin_PROGRAMS = alsamixer
 alsamixer_SOURCES = card_select.c card_select.h \
